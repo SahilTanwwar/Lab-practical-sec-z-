@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
 
 app.use("/api/url", urlRoutes);
 
-// Redirect Short URL
+
 app.get("/:shortCode", async (req, res) => {
   try {
     const { shortCode } = req.params;
